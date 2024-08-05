@@ -5,3 +5,6 @@
 .link-styled::first-letter {
   color: red; 
 }
+.image{
+  background-image: "téléchargement.jpeg";
+}
