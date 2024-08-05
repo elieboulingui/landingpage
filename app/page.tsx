@@ -88,9 +88,9 @@ export default function Home() {
             <div className='flex flex-col'>
               <div className='w-full max-w-md pl-4 md:pl-20 md:pb-11'>
                 <p className="text-xs md:text-base link-styled">
-               We   are so excited to introduce to you our new Unbounce
-Template called Conference. This Template is fully
-responsive and CMS ready, no coding skills required!
+                  We   are so excited to introduce to you our new Unbounce
+                  Template called Conference. This Template is fully
+                  responsive and CMS ready, no coding skills required!
                 </p>
               </div>
 
@@ -121,28 +121,75 @@ responsive and CMS ready, no coding skills required!
 
           </div></div>
       </div>
-    
+
       <div className="h-full bg-violet-600 flex flex-col justify-around">
-  <div className="flex-grow flex items-center justify-center text-center pt-4">
-    <div>
-      <h1 className="text-white text-2xl mb-4">
-        You are invited to our <br /> Meetup Conference
-      </h1>
-      <p className="text-white text-sm">
-        le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
-        ne constituant pas l'intrigue principale d'une œuvre. <br />
-        Ce terme est notamment utilisé dans le domaine des jeux vidéo.
-      </p>
-      <div className="pt-4 flex justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3l14 9-14 9V3z" />
-        </svg>
+        <div className="flex-grow flex items-center justify-center text-center pt-4">
+          <div>
+            <h1 className="text-white text-2xl mb-4">
+              You are invited to our <br /> Meetup Conference
+            </h1>
+            <p className="text-white text-sm">
+              le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
+              ne constituant pas l'intrigue principale d'une œuvre. <br />
+              Ce terme est notamment utilisé dans le domaine des jeux vidéo.
+            </p>
+            <div className="pt-4 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3l14 9-14 9V3z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-full bg-slate-50  pt-10 flex flex-col justify-around">
+        <div className="flex-grow flex items-center justify-center text-center pt-4">
+          <div>
+            <h1 className="text-violet-700 text-2xl mb-4">
+              You are invited to our <br /> Meetup Conference
+            </h1>
+            <p className="text-white text-sm">
+              le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
+              ne constituant pas l'intrigue principale d'une œuvre. <br />
+              Ce terme est notamment utilisé dans le domaine des jeux vidéo.
+            </p>
+            <div className="pt-4 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3l14 9-14 9V3z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center p-4">
+  <div className="flex justify-around w-full">
+    <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
+      <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
+      <div className="w-full text-center mt-2">
+        <p>John Doe</p>
+        <p>30 ans</p>
+      </div>
+    </div>
+    <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
+      <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
+      <div className="w-full text-center mt-2">
+        <p>John Doe</p>
+        <p>30 ans</p>
+      </div>
+    </div>
+    <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
+      <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
+      <div className="w-full text-center mt-2">
+        <p>John Doe</p>
+        <p>30 ans</p>
       </div>
     </div>
   </div>
+  <div className='flex justify-center pt-4'>
+    <button className="bg-violet-400 text-white px-4 py-2 rounded hover:bg-purple-100">
+      BYU Tickets
+    </button>
+  </div>
 </div>
-
-
 
     </main>
 
