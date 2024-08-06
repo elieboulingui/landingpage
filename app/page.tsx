@@ -60,13 +60,11 @@ export default function Home() {
             <button className="inline-flex items-center px-4 py-2 rounded-md text-purple-700 bg-white hover:bg-purple-100">
               I kNOW MORE
             </button>
-
           </div>
         </div>
       </div>
       <div>
         <div className="h-full  flex flex-col justify-around">
-
           <div className="flex-grow flex items-center justify-center text-center pt-4">
             <div>
               <h1 className="text-black text-2xl  mb-4">
@@ -79,8 +77,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-
           <div className="flex justify-around p-4">
             <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
               <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' />
@@ -93,35 +89,30 @@ export default function Home() {
                   responsive and CMS ready, no coding skills required!
                 </p>
               </div>
-
               <div className='w-full max-w-md pl-4 pt-2 md:pl-20 md:pb-11'>
                 <p className="text-xs md:text-base">
                   W lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « », est
                 </p>
               </div>
-
               <div className='w-full max-w-md pl-4 pt-2 md:pl-20 md:pb-11'>
                 <p className="text-xs md:text-base">
                   W lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « », est
                 </p>
               </div>
-
               <div className='w-full max-w-md pl-4 md:pl-20 md:pb-11'>
                 <p className="text-xs md:text-base link-styled">
                   W lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction ne constituant pas l'intrigue
                 </p>
               </div>
-
               <div className='flex justify-center pt-4 pr-10'>
                 <button className="bg-violet-400 text-white px-4 py-2 rounded hover:bg-purple-100">
                   BYU Tickets
                 </button>
               </div>
             </div>
-
-          </div></div>
+          </div>
+        </div>
       </div>
-
       <div className="h-full bg-violet-600 flex flex-col justify-around">
         <div className="flex-grow flex items-center justify-center text-center pt-4">
           <div>
@@ -147,7 +138,7 @@ export default function Home() {
             <h1 className="text-violet-700 text-2xl mb-4">
               You are invited to our <br /> Meetup Conference
             </h1>
-            <p className="text-white text-sm">
+            <p className="text-black text-sm">
               le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
               ne constituant pas l'intrigue principale d'une œuvre. <br />
               Ce terme est notamment utilisé dans le domaine des jeux vidéo.
@@ -161,38 +152,95 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center p-4">
-  <div className="flex justify-around w-full">
-    <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
-      <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
-      <div className="w-full text-center mt-2">
-        <p>John Doe</p>
-        <p>30 ans</p>
+        <div className="flex justify-around w-full">
+          <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
+            <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
+            <div className="w-full text-left mt-2">
+              <p>John Doe</p>
+              <p>30 ans</p>
+            </div>
+          </div>
+          <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
+            <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
+            <div className="w-full text-left mt-2">
+              <p>John Doe</p>
+              <p>30 ans</p>
+            </div>
+          </div>
+          <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
+            <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
+            <div className="w-full text-left mt-2">
+              <p>John Doe</p>
+              <p>30 ans</p>
+            </div>
+          </div>
+        </div>
+        <div className='flex justify-center pt-4'>
+          <button className="bg-violet-400 text-white px-4 py-2 rounded hover:bg-purple-100">
+            BYU Tickets
+          </button>
+        </div>
+      </div>
+      <div className="h-full bg-violet-600 flex flex-col justify-around">
+        <div className="flex-grow flex items-center justify-center text-center pt-4">
+          <div>
+            <h1 className="text-white text-2xl mb-4">
+              Schuedule of Meeting<br />  Conference
+            </h1>
+            <p className="text-white text-sm">
+              le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
+              ne constituant pas l'intrigue principale d'une œuvre. <br />
+              Ce terme est notamment utilisé dans le domaine des jeux vidéo.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-around p-4">
+
+  <div className='flex flex-col w-full max-w-md'>
+    <div className='pt-6 pl-4 md:pl-20 md:pb-11'>
+      <div className="flex justify-between items-start">
+        <span className="mr-4">22 <br /> May</span>
+        <div className="flex flex-col justify-between items-start mr-4 mb-4 ">
+          <p  className="mr-10" >Breakfast</p>
+        </div>
+        <p className="text-xs md:text-base link-styled ">
+          We are so excited to introduce to you our new Unbounce
+          Template called Conference. This Template is fully
+          responsive and CMS ready, no coding skills required!
+        </p>
       </div>
     </div>
-    <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
-      <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
-      <div className="w-full text-center mt-2">
-        <p>John Doe</p>
-        <p>30 ans</p>
+
+    <div className='pl-4 md:pl-20 md:pb-11 mt-6'>
+      <div className="flex justify-between items-start">
+        <span className="mr-4">23 <br /> May</span>
+        <div className="flex flex-col justify-between items-start mr-4 mb-4">
+          <p className="mr-10">Lunch</p>
+        </div>
+        <p className="text-xs md:text-base link-styled pl-4">
+          Another exciting event description goes here. This is fully
+          responsive and CMS ready, no coding skills required!
+        </p>
       </div>
     </div>
-    <div className='w-full max-w-md pt-6 pl-4 md:pl-20 md:pb-11'>
-      <img src='./image/téléchargement.jpeg' className='w-full h-auto md:h-96 md:max-w-full' style={{ marginTop: '15px' }} />
-      <div className="w-full text-center mt-2">
-        <p>John Doe</p>
-        <p>30 ans</p>
+
+    <div className='pl-4 md:pl-20 md:pb-11 mt-6'>
+      <div className="flex justify-between items-start">
+        <span className="mr-4">24 <br /> May</span>
+        <div className="flex flex-col justify-between items-start mr-4 mb-4">
+          <p className="mr-10">Dinner</p>
+        </div>
+        <p className="text-xs md:text-base link-styled pl-4">
+          Join us for dinner and networking. This is fully responsive
+          and CMS ready, no coding skills required!
+        </p>
       </div>
     </div>
-  </div>
-  <div className='flex justify-center pt-4'>
-    <button className="bg-violet-400 text-white px-4 py-2 rounded hover:bg-purple-100">
-      BYU Tickets
-    </button>
   </div>
 </div>
 
+
+      </div>
     </main>
-
-
   );
 }
