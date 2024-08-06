@@ -11,30 +11,30 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <div className="relative  bg-gray-700">
-      <nav className="flex justify-between items-center p-4   bg-gray-800 text-white">
-  <a href="#" className="text-lg font-semibold hover:text-gray-300">Eivent</a>
-  <div className="lg:hidden flex items-center z-10">
-    <button 
-      onClick={toggleMenu} 
-      className="p-2 rounded-md hover:bg-purple-100 focus:outline-none" 
-      aria-label="Toggle menu"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
-  <ul className={`lg:flex  lg:space-x-6 lg:static lg:bg-transparent absolute top-16 right-0 bg-gray-700 ${isMenuOpen ? 'block' : 'hidden'}`}>
-    <li><a href="#about" className="text-lg font-medium p-2 hover:bg-gray-600">About</a></li>
-    <li><a href="#space" className="text-lg font-medium p-2 hover:bg-gray-600">Space</a></li>
-    <li><a href="#contact" className="text-lg font-medium p-2 hover:bg-gray-600">Contact</a></li>
-    <li>
-      <button className="custom-bg text-gray-800 py-1 px-4 rounded hover:bg-purple-100">
-        BYU Tickets
-      </button>
-    </li>
-  </ul>
-</nav>
+        <nav className="flex justify-between items-center p-4   bg-gray-800 text-white">
+          <a href="#" className="text-lg font-semibold hover:text-gray-300">Eivent</a>
+          <div className="lg:hidden flex items-center z-10">
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-md hover:bg-purple-100 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          <ul className={`lg:flex  lg:space-x-6 lg:static lg:bg-transparent absolute top-16 right-0 bg-gray-700 ${isMenuOpen ? 'block' : 'hidden'}`}>
+            <li><a href="#about" className="text-lg font-medium p-2 hover:bg-gray-600">About</a></li>
+            <li><a href="#space" className="text-lg font-medium p-2 hover:bg-gray-600">Space</a></li>
+            <li><a href="#contact" className="text-lg font-medium p-2 hover:bg-gray-600">Contact</a></li>
+            <li>
+              <button className="custom-bg text-gray-800 py-1 px-4 rounded hover:bg-purple-100">
+                BYU Tickets
+              </button>
+            </li>
+          </ul>
+        </nav>
 
         <div className="w-full max-w-md pl-4 pb-6 md:pl-20 md:pb-11">
           <p className="text-white font-bold text-base md:text-lg">Meetup</p>
@@ -381,71 +381,69 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='bg-slate-50 flex flex-col min-h-screen relative'>
- 
-  <div className='bg-red-700 flex-shrink-0'>
-    <a href="https://www.google.fr/maps/preview" target="_blank" rel="noopener noreferrer">
-      <img src="./image/map.avif" alt="Map" className="w-full max-h-80 object-cover" />
-    </a>
-  </div>
+      <div className='relative min-h-screen flex flex-col'>
+        {/* Image Section */}
+        <div className='flex-shrink-0'>
+          <a href="https://www.google.fr/maps/preview" target="_blank" rel="noopener noreferrer">
+            <img src="./image/map.avif" alt="Map" className="w-full max-h-80 object-cover" />
+          </a>
+        </div>
 
 
-  <div className='absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex flex-col md:flex-row items-start justify-center space-y-6 md:space-y-0 md:space-x-6'>
+        <div className='absolute inset-x-36 top-1/2 transform -translate-y-1/2 flex flex-col md:flex-row items-start justify-center space-y-6 md:space-y-0  '>
 
-    <div className='custom-bg p-4 md:pb-16 shadow-lg max-w-md w-full'>
-      <h1 className='text-lg font-semibold text-white'>Get in touch</h1>
-      <div className='flex flex-col md:flex-row items-start'>
-        <div className='w-full md:w-2 bg-gray-600 mb-4 md:mb-0 md:mr-4'></div>
-        <div className='text-white'>
-          <p className='text-sm pt-2 md:pt-4'>Lorem ipsum dolor, sit amet consectetur consequuntur <br /> repellendus ducimus magnam <br /> accusamus fugit vitae!</p>
-          <p className='text-sm pt-2 md:pt-4'>Lorem ipsum dolor, sit amet consectetur consequuntur <br /> repellendus ducimus magnam <br /> accusamus fugit vitae!</p>
-          <p className='text-sm pt-4 md:pt-8'>Lorem ipsum dolor, sit amet consectetur consequuntur accusamus fugit vitae!</p>
+          <div className='custom-bg p-4 md:pb-16 shadow-lg max-w-md w-full '>
+            <h1 className='text-lg font-semibold text-white'>Get in touch</h1>
+            <div className='flex flex-col md:flex-row items-start'>
+              <div className='w-full md:w-2 bg-gray-600 mb-4 md:mb-0 md:mr-4'></div>
+              <div className='text-white'>
+                <p className='text-sm pt-2 md:pt-4'>Lorem ipsum dolor, sit amet consectetur consequuntur <br /> repellendus ducimus magnam <br /> accusamus fugit vitae!</p>
+                <p className='text-sm pt-2 md:pt-4'>Lorem ipsum dolor, sit amet consectetur consequuntur <br /> repellendus ducimus magnam <br /> accusamus fugit vitae!</p>
+                <p className='text-sm pt-4 md:pt-8'>Lorem ipsum dolor, sit amet consectetur consequuntur accusamus fugit vitae!</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className='custom-bg p-4 md:p-7 shadow-lg max-w-md w-full'>
+            <form>
+              <h2 className='text-lg font-semibold mb-4 text-white'>Sign Up</h2>
+              <div className='mb-4'>
+                <label htmlFor='username' className='block text-sm font-medium text-white'>Username</label>
+                <input type='text' id='username' name='username' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
+              </div>
+              <div className='mb-4'>
+                <label htmlFor='signup-email' className='block text-sm font-medium text-white'>Email</label>
+                <input type='email' id='signup-email' name='signup-email' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
+              </div>
+              <div className='mb-4'>
+                <label htmlFor='password' className='block text-sm font-medium text-white'>Password</label>
+                <input type='password' id='password' name='password' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
+              </div>
+              <button type='submit' className='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600'>Sign Up</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div className='bg-black h-96 flex-shrink-0'>
+          <div className='flex items-center justify-center p-4'>
+
+          </div>
+        </div>
+        <div className='bg-black h-20  bottom-0 w-full flex-shrink-0'>
+          <div className='flex items-center justify-center h-full px-4'>
+            <ul className="flex flex-wrap justify-center space-x-6 text-white text-sm md:text-lg">
+              <li><a href="#" className='hover:underline'>Careers</a></li>
+              <li><a href="#" className='hover:underline'>About</a></li>
+              <li><a href="#" className='hover:underline'>Privacy</a></li>
+              <li><a href="#" className='hover:underline'>Policy</a></li>
+              <li><a href="#" className='hover:underline'>MobileApp</a></li>
+              <li><a href="#" className='hover:underline'>Press</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-
-    <div className='custom-bg p-4 md:p-7 shadow-lg max-w-md w-full'>
-      <form>
-        <h2 className='text-lg font-semibold mb-4 text-white'>Sign Up</h2>
-        <div className='mb-4'>
-          <label htmlFor='username' className='block text-sm font-medium text-white'>Username</label>
-          <input type='text' id='username' name='username' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
-        </div>
-        <div className='mb-4'>
-          <label htmlFor='signup-email' className='block text-sm font-medium text-white'>Email</label>
-          <input type='email' id='signup-email' name='signup-email' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
-        </div>
-        <div className='mb-4'>
-          <label htmlFor='password' className='block text-sm font-medium text-white'>Password</label>
-          <input type='password' id='password' name='password' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
-        </div>
-        <button type='submit' className='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600'>Sign Up</button>
-      </form>
-    </div>
-  </div>
-
-
-  <div className='bg-black h-96 flex-shrink-0'>
-    <div className='flex items-center justify-center p-4'>
-
-    </div>
-  </div>
-  <div className='bg-black h-20  bottom-0 w-full flex-shrink-0'>
-    <div className='flex items-center justify-center h-full px-4'>
-      <ul className="flex flex-wrap justify-center space-x-6 text-white text-sm md:text-lg">
-        <li><a href="#" className='hover:underline'>Careers</a></li>
-        <li><a href="#" className='hover:underline'>About</a></li>
-        <li><a href="#" className='hover:underline'>Privacy</a></li>
-        <li><a href="#" className='hover:underline'>Policy</a></li>
-        <li><a href="#" className='hover:underline'>MobileApp</a></li>
-        <li><a href="#" className='hover:underline'>Press</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
     </main>
   );
 }
