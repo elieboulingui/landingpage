@@ -11,24 +11,31 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <div className="relative  bg-gray-700">
-        <nav className="flex justify-between items-center p-4 relative">
-          <a href="#" className="link-styled">Eivent</a>
-          <div className="lg:hidden flex items-center z-10">
-            <button onClick={toggleMenu} className="p-2 rounded-md custom-bg hover:bg-purple-100">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-          <ul className={`absolute top-16 right-0 bg-gray-700 lg:flex lg:space-x-6 lg:static lg:bg-transparent ${isMenuOpen ? 'block' : 'hidden'}`}>
-            <li className="text-lg font-medium text-white p-2 lg:p-0">About</li>
-            <li className="text-lg font-medium text-white p-2 lg:p-0">Space</li>
-            <li className="text-lg font-medium text-white p-2 lg:p-0">Contact</li>
-            <button className="bg-white custom-bg py-1 px-4 rounded hover:bg-purple-100">
-              BYU Tickets
-            </button>
-          </ul>
-        </nav>
+      <nav className="flex justify-between items-center p-4   bg-gray-800 text-white">
+  <a href="#" className="text-lg font-semibold hover:text-gray-300">Eivent</a>
+  <div className="lg:hidden flex items-center z-10">
+    <button 
+      onClick={toggleMenu} 
+      className="p-2 rounded-md hover:bg-purple-100 focus:outline-none" 
+      aria-label="Toggle menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+  <ul className={`lg:flex  lg:space-x-6 lg:static lg:bg-transparent absolute top-16 right-0 bg-gray-700 ${isMenuOpen ? 'block' : 'hidden'}`}>
+    <li><a href="#about" className="text-lg font-medium p-2 hover:bg-gray-600">About</a></li>
+    <li><a href="#space" className="text-lg font-medium p-2 hover:bg-gray-600">Space</a></li>
+    <li><a href="#contact" className="text-lg font-medium p-2 hover:bg-gray-600">Contact</a></li>
+    <li>
+      <button className="custom-bg text-gray-800 py-1 px-4 rounded hover:bg-purple-100">
+        BYU Tickets
+      </button>
+    </li>
+  </ul>
+</nav>
+
         <div className="w-full max-w-md pl-4 pb-6 md:pl-20 md:pb-11">
           <p className="text-white font-bold text-base md:text-lg">Meetup</p>
           <p className="text-white font-bold text-base md:text-lg">Conference</p>
@@ -424,9 +431,7 @@ export default function Home() {
 
     </div>
   </div>
-
- -
-  <div className='bg-black h-20 fixed bottom-0 w-full flex-shrink-0'>
+  <div className='bg-black h-20  bottom-0 w-full flex-shrink-0'>
     <div className='flex items-center justify-center h-full px-4'>
       <ul className="flex flex-wrap justify-center space-x-6 text-white text-sm md:text-lg">
         <li><a href="#" className='hover:underline'>Careers</a></li>
