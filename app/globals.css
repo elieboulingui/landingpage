@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-bg {
+  background-color: #922A8D;
+}
 .link-styled::first-letter {
   color: red; 
 }
