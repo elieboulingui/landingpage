@@ -374,22 +374,68 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div  className='h-full pb-10 bg-slate-50  flex flex-col justify-around'>
-      <div className='bg-red-700 h-full'>
-  <img src="./image/téléchargement.jpeg" alt="" className="w-full h-full object-cover" />
+      <div className='bg-slate-50 flex flex-col min-h-screen relative'>
+        <div className='bg-red-700 flex-shrink-0'>
+          <a href="https://www.google.fr/maps/preview" target="_blank" rel="noopener noreferrer">
+            <img src="./image/map.avif" alt="Map" className="w-full max-h-80 object-cover" />
+          </a>
+        </div>
+
+        <div className='absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex items-start justify-center space-x-0'>
+          <div className='bg-violet-600 p-7 shadow-lg max-w-md w-full'>
+            <h1>Get in touch</h1>
+            <div className='flex items-start w-64 max-w-xs'>
+  <div className='w-2 bg-gray-600 mr-4'></div>
+  <div>
+    <p className='text-sm pt-4'>Lorem ipsum dolor, sit amet consectetur consequuntur <br /> repellendus ducimus magnam <br /> accusamus fugit vitae!</p>
+    <p className='text-sm pt-4'>Lorem ipsum dolor, sit amet consectetur consequuntur <br /> repellendus ducimus magnam <br /> accusamus fugit vitae!</p>
+    <p className='text-sm pt-8'>Lorem ipsum dolor, sit amet consectetur consequuntur accusamus fugit vitae!</p>
+  </div>
 </div>
 
-        <div  className='bg-black h-full'>
-          <ul  className="flex justify-between items-center p-4 relative">
-            <li className='text-white'>Careers </li>
-            <li className='text-white'> About  </li>
-            <li className='text-white'> privacy </li>
-            <li className='text-white'> policy </li>
-            <li className='text-white'> MobileApp </li>
-            <li className='text-white'>Press </li>
-          </ul>
+
+          </div>
+
+          <div className='bg-violet-900  p-11 shadow-lg max-w-md w-full'>
+            <form>
+              <h2 className='text-lg font-semibold mb-4'>Sign Up</h2>
+              <div className='mb-4'>
+                <label htmlFor='username' className='block text-sm font-medium text-white'>Username</label>
+                <input type='text' id='username' name='username' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
+              </div>
+              <div className='mb-4'>
+                <label htmlFor='signup-email' className='block text-sm font-medium text-white'>Email</label>
+                <input type='email' id='signup-email' name='signup-email' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
+              </div>
+              <div className='mb-4'>
+                <label htmlFor='password' className='block text-sm font-medium text-white'>Password</label>
+                <input type='password' id='password' name='password' className='mt-1 block w-full border-gray-300 rounded-md shadow-sm' />
+              </div>
+              <button type='submit' className='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600'>Sign Up</button>
+            </form>
+          </div>
         </div>
+
+        <div className='bg-black h-96 flex-shrink-0'>
+          <div className='flex items-center justify-center p-4'>
+          </div>
+        </div>
+        <div className='bg-black h-20 fixed bottom-0 w-full flex-shrink-0'>
+          <div className='flex items-center justify-center h-full px-4'>
+            <ul className="flex flex-row space-x-6 text-white text-lg">
+              <li><a href="#" className='hover:underline'>Careers</a></li>
+              <li><a href="#" className='hover:underline'>About</a></li>
+              <li><a href="#" className='hover:underline'>Privacy</a></li>
+              <li><a href="#" className='hover:underline'>Policy</a></li>
+              <li><a href="#" className='hover:underline'>MobileApp</a></li>
+              <li><a href="#" className='hover:underline'>Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
+
     </main>
   );
 }
