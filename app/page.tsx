@@ -306,7 +306,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='h-full bg-slate-50  pt-10 flex flex-col justify-around' >
+      <div className='h-full pb-10 bg-slate-50  pt-10 flex flex-col justify-around' >
         <div className='flex flex-row justify-center'>
           <div className='h-96 bg-violet-800 w-96'>
             <div>
@@ -323,9 +323,71 @@ export default function Home() {
             </div>
           </div>
           <div className='h-96 bg-white-800 w-96 flex flex-col'>
-            <div><img src="./image/téléchargement.jpeg" alt="" /></div>
-            <div><img src="./image/téléchargement.jpeg" alt="" /></div>
+            <div className='pt-4'><img src="./image/téléchargement.jpeg" alt="" /></div>
+            <div className='pt-20'><img src="./image/téléchargement.jpeg" alt="" /></div>
           </div>
+        </div>
+      </div>
+      <div className='h-full bg-violet-600  pt-10 flex flex-col justify-around'>
+        <div className="flex-grow flex items-center justify-center text-center pt-4">
+          <div>
+            <h1 className="text-white text-2xl mb-4">
+              Sponsored of Meetup<br />  Conference
+            </h1>
+            <p className="text-white text-sm">
+              le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
+              ne constituant pas l'intrigue principale d'une œuvre.
+            </p>
+          </div>
+        </div>
+        <div className="p-4">
+          <div className="grid grid-cols-4 gap-4">
+            <div className="flex items-center justify-center border-r border-b border-gray-300 p-4">
+              <p>Icon 1</p>
+            </div>
+            <div className="flex items-center justify-center border-r border-b border-gray-300 p-4">
+              <p>Icon 2</p>
+            </div>
+            <div className="flex items-center justify-center border-r border-b border-gray-300 p-4">
+              <p>Icon 3</p>
+            </div>
+            <div className="flex items-center justify-center border-b p-4">
+              <p>Icon 4</p>
+            </div>
+            <div className="flex items-center justify-center border-r border-gray-300 p-4">
+              <p>Icon 5</p>
+            </div>
+            <div className="flex items-center justify-center border-r border-gray-300 p-4">
+              <p>Icon 6</p>
+            </div>
+            <div className="flex items-center justify-center border-r border-gray-300 p-4">
+              <p>Icon 7</p>
+            </div>
+            <div className="flex items-center justify-center p-4">
+              <p>Icon 8</p>
+            </div>
+          </div>
+          <div className='flex justify-center pt-4'>
+            <button className="bg-violet-400 text-white px-4 py-2 rounded hover:bg-purple-100">
+              BYU Tickets
+            </button>
+          </div>
+        </div>
+      </div>
+      <div  className='h-full pb-10 bg-slate-50  flex flex-col justify-around'>
+      <div className='bg-red-700 h-full'>
+  <img src="./image/téléchargement.jpeg" alt="" className="w-full h-full object-cover" />
+</div>
+
+        <div  className='bg-black h-full'>
+          <ul  className="flex justify-between items-center p-4 relative">
+            <li className='text-white'>Careers </li>
+            <li className='text-white'> About  </li>
+            <li className='text-white'> privacy </li>
+            <li className='text-white'> policy </li>
+            <li className='text-white'> MobileApp </li>
+            <li className='text-white'>Press </li>
+          </ul>
         </div>
       </div>
     </main>
