@@ -18,7 +18,7 @@ const Intervenant: React.FC = () => {
       <div className='grid grid-cols-1 pt-8 pl-24 md:grid-cols-3 gap-6'>
         {speakers.map((speaker, index) => (
           <div key={index}>
-            <Image src={speaker.image} width={384} height={200} alt={speaker.nom} />
+            <Image className='h-96' src={speaker.image} width={384} height={200} alt={speaker.nom} />
             <footer className=' bg-white  w-96 h-24'>
               <h1 className='text-violet-400 font-oswald font-bold text-2xl pt-4 pl-7'>{speaker.nom}</h1>
               <p className='pt-2 pl-7 font-thin'>{speaker.role}</p>
@@ -26,7 +26,7 @@ const Intervenant: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className='relative pt- flex justify-center pb-32'>
+      <div className='relative  flex justify-center pb-16'>
         <button className='bg-purple-800 text-xl px-6 py-4 font-oswald text-white flex items-center mt-32'>
           <div className='bg-white h-6 w-1 mr-4'></div>
           Call For Speaker

@@ -55,7 +55,9 @@ export interface uRls {
 export interface Invitation {
   image: string;
 }
-
+export interface Video{
+  video:string
+}
 export interface Day {
   Descriptiondate?: number;
   hours?: number;
@@ -101,7 +103,7 @@ const image: Image[] = [
   { src: '/image/ee32.png', alt: 'image5' }
 ];
 
-const backgroundImage: BackgroundImage = { url: '/image/one.jpg' };
+const backgroundImage: BackgroundImage = { url: '/image/gab.jpg' };
 
 const day: Day[] = [
   { Descriptiondate: 365, hours: 24, minutes: 59, seconds: 59 }
@@ -112,7 +114,9 @@ const users: User[] = [
   { nom: 'dupont', prenom: 'jean', email: 'jean.dupont@example.com' },
   { nom: 'smith', prenom: 'john', email: 'john.smith@example.com' },
 ];
-
+const video:Video[]=[
+  {video:"/video/event.mp4"}
+]
 const products: Product[] = [
   { id: 1, nom: 'Produit A', prix: 29.99 },
   { id: 2, nom: 'Produit B', prix: 19.99 },
@@ -124,10 +128,10 @@ const invitation: Invitation[] = [
 ];
 
 const speakers: Speaker[] = [
-  { nom: 'boulingui', role: 'programmer', image: '/image/pro.jpeg' },
+  { nom: 'Gabin Steeven', role: 'programmer', image: '/image/gab.jpg' },
   { nom: "rocia meolicia", role: 'eleve', image: "/image/piece.avif" },
-  { nom: "rocia meolicia", role: 'eleve', image: "/image/piece.webp" }
+  { nom: "Gabin Steeven ", role: 'eleve', image: "/image/ecole.jpg" }
 ];
 
 // Export all constants
-export { users, products, speakers, invitation, day, planing, backgroundImage, image, maps, Urls, info };
+export { users, products, speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
