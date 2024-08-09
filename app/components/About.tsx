@@ -7,17 +7,18 @@ import { invitation} from './data';
       <h1 className='text-violet-900 text-center text-5xl md:text-4xl pt-28 font-bold'>
         You Are Invited To Our
       </h1>
-      <h1 className="text-violet-900 text-center text-5xl md:text-4xl pt-5 font-bold"> Meetup Conference</h1>
-      <p className='text-center pt-5 font-thin md:text-lg'>
+      <h1 className="text-violet-900 text-center text-5xl md:text-4xl  font-bold"> Meetup Conference</h1>
+      <p className='text-center  font-thin md:text-lg'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius, laborum voluptatum aperiam soluta iste error at. Corporis, nemo possimus
         <br />
         id, voluptatem eveniet, amet inventore fugit repudiandae cupiditate doloremque itaque.
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-16 p-4 md:p-14 pt-16 md:pt-44'>
-        <div className="flex justify-center items-center  pb-5 md:pb-52">
+      <div className='grid grid-cols-1 md:grid-cols-2 p-4'>
+        <div className="flex justify-center items-center md:pb-20">
         <div>
         {invitation.map((invitation, index) => (
           <Image 
+          className="h-96 " 
             key={index} 
             src={invitation.image} 
             width={330} 
@@ -47,7 +48,7 @@ import { invitation} from './data';
                 similique cum consequuntur 
               </p>
             </div>
-            <div className="flex items-start pt-10 ">
+            <div className="flex items-start  ">
               <p className="font-thin w-3/4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis rem eius inventore consequatur numquam eligendi qui magnam magni atque
                 similique cum consequuntur 
@@ -58,7 +59,7 @@ import { invitation} from './data';
               </p>
             </div>
           </div>
-          <div className="   pt-9 pb-24 flex">
+          <div className="   px-8 py-12 flex">
             <button className="bg-purple-800 text-xl px-6 py-4 font-oswald text-white flex items-center">
               <div className='bg-white h-6 w-1 mr-4'></div>
               Know More
