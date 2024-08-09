@@ -1,7 +1,7 @@
 // Sponsored.tsx
 import React from 'react';
 import Image from 'next/image';
-import { image } from './data';
+import { image } from '../database/data';
 
 const Sponsored: React.FC = () => {
   return (

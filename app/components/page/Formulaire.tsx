@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import {info} from "./data"
+import {info} from "../database/data"
  const Formulaire : React.FC =() => {
     const [form] = info;
     return (

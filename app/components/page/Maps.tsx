@@ -1,7 +1,7 @@
 import React from 'react';
 import Formulaire from './Formulaire';
-import {maps} from './data'
-import {Urls} from "./data"
+import {maps} from '../database/data'
+import {Urls} from "../database/data"
 
 export default function Maps() {
   const map= maps[0].url

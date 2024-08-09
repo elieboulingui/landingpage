@@ -1,7 +1,7 @@
 // Intervenant.tsx
 import React from 'react';
 import Image from 'next/image';
-import { speakers } from './data';
+import { speakers } from '../database/data';
 
 const Intervenant: React.FC = () => {
   return (

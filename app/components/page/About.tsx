@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from 'react'
-import { invitation} from './data';
+import { invitation} from '../database/data';
  const About: React.FC=()=> {
   return (
     <div className="flex flex-col items-center px-4 md:px-14 container mx-auto">

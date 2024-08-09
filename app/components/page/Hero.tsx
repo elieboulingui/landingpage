@@ -1,5 +1,5 @@
 import React from 'react';
-import  {day} from "./data"
+import  {day} from "../database/data"
 const Hero = () => {
   const [item] = day;
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="flex">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="px-6 py-5 bg-white rounded text-center font-bold">
-            <h1 className="text-3xl font-oswald">{item.days}</h1>
+            <h1 className="text-3xl font-oswald">{item.Descriptiondate}</h1>
             <p className="font-thin font-oswald text-lg">DAYS</p>
           </div>
           <div className="px-6 py-5 bg-white rounded text-center font-bold">

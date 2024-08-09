@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
-import { invitation } from './data';
-import { image } from './data';
+import { invitation } from '../database/data';
+import { image } from '../database/data';
 export default function Venu() {
   return (
     <div className='flex flex-col gap-4 p-6 md:p-24 container mx-auto'>

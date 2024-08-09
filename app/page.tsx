@@ -1,13 +1,13 @@
-import About from "./components/About";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Intervenant from "./components/Intervenant";
-import Maps from "./components/Maps";
-import Minivideo from "./components/Minivideo";
-import Schedule from "./components/Schedule";
-import Sponsored from "./components/Sponsored";
-import Venu from "./components/Venu";
- import { backgroundImage } from "./components/data";
+import About from "./components/page/About";
+import Header from "./components/page/Header";
+import Hero from "./components/page/Hero";
+import Intervenant from "./components/page/Intervenant";
+import Maps from "./components/page/Maps";
+import Minivideo from "./components/page/Minivideo";
+import Schedule from "./components/page/Schedule";
+import Sponsored from "./components/page/Sponsored";
+import Venu from "./components/page/Venu";
+ import { backgroundImage } from "./components/database/data";
 export default function Home() {
   return (
     <main>
