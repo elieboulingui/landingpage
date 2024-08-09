@@ -4,7 +4,7 @@ import {info} from "./data"
  const Formulaire : React.FC =() => {
     const [form] = info;
     return (
-        <div className='  absolute grid-cols-1 md:absolute pt-[330px] w-full mx-auto px-4 md:px-20'>
+        <div className='  container  absolute grid-cols-1 md:absolute pt-[330px]  container w-full mx-auto px-4 md:px-20'>
             <div className='  md:grid grid-flow-col justify-center '>
                 <div className='hidden md:block bg-violet-500 px-20'>
                     <h1 className='text-white font-osvald font-bold text-5xl relative  pt-10  pr-10'> Get In Touch </h1>

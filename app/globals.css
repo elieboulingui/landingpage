@@ -7,34 +7,4 @@
     font-size: 2em; 
     font-weight: bolder;
 }
-/* Minivideo.css */
 
-.video-background {
-    position: relative;
-    height: 100vh; /* Ajustez selon vos besoins */
-    overflow: hidden;
-  }
-  
-  .video-background video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
-  
-  .overlay {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2; /* Assure que le contenu est au-dessus de la vidéo */
-    padding: 20px; /* Ajustez le padding selon vos besoins */
-  }
-  

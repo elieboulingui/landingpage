@@ -2,7 +2,7 @@ import React from 'react';
 
  const  Schedule:  React.FC =() =>{
     return (
-        <div className="h-full bg-violet-600 flex flex-col justify-between p-4">
+        <div className="h-full  container mx-auto bg-violet-600 flex flex-col justify-between p-4">
             <div className="flex-grow flex items-center justify-center text-center pt-4">
                 <div>
                     <h1 className="text-white text-2xl mb-4">
