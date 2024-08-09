@@ -2,14 +2,14 @@ import React from 'react';
 
 
 const Hero = () => {
- 
+
   return (
-    <div className='h-full w-full pt-8'>
+    <div className='h-full w-full pt-8 container mx-auto'>
       <div className='pl-28 pt-14'>
-        <h1 className='text-6xl font-bold text-white font-oswald'>
+        <h1 className='text-6xl  font-bold text-white font-oswald'>
           Meetup <br /> Conference
         </h1>
-        <p className="w-4/12 pt-12 pb-4 text-white font-inter">
+        <p className=" w-96 md:w-4/12 pt-12 pb-4 text-white font-inter ">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur cum explicabo tenetur recusandae, rerum ab fugit necessitatibus sint laborum illum nostrum quia distinctio amet tempora, placeat aspernatur quas perspiciatis debitis.
         </p>
       </div>

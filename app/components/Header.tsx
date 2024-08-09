@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 pl-28 pr-28 relative">
+    <nav className="flex items-center justify-between p-4 pl-28 pr-28 relative ">
       <Image src={'/image/README.png'} width={120} height={10} alt="Logo" />
       <div className="relative">
         <button

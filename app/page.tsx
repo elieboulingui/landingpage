@@ -9,7 +9,7 @@ import Venu from "./components/Venu";
 
 export default function Home() {
   return (
-    <main >
+    <main className="container  mx-auto "  >
       <div  style={{ backgroundImage: 'url("/image/one.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}> 
     <Header/>
     <Hero/>

@@ -2,11 +2,12 @@ import React from 'react'
 
 export default function Minivideo() {
   return (
-    <div className='bg-violet-400 relative'>
-      <h1 className='text-center text-3xl md:text-4xl text-white font-bold pt-28'>
-        Check Out Our Intro Video <br /> Meetup Conferences
+    <div className='bg-violet-400 relative container mx-auto'>
+      <h1 className='text-center text-5xl text-white font-bold pt-28'>
+        Check Out Our Intro Video 
       </h1>
-      <p className='text-center text-white pt-9 font-thin md:text-lg'>
+      <h1 className='text-white text-center text-5xl md:text-4xl pt-6 font-bold'> Meetup Conferences</h1>
+      <p className='text-center text-white pt-9 font-thin md:text-lg '>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius, laborum voluptatum aperiam
         <br />
         id, voluptatem eveniet, amet inventore fugit repudiandae cupiditate doloremque itaque.
