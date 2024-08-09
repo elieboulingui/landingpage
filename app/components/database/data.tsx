@@ -71,7 +71,7 @@ const planing: Descriptiondate[] = [
   { jours: "22" },
   { but: "fastfood" },
   { heure: "12h34" },
-  { detaille: "programation" }
+  { detaille: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" }
 ];
 
 const info: Info[] = [
@@ -109,6 +109,7 @@ const day: Day[] = [
   { Descriptiondate: 365, hours: 24, minutes: 59, seconds: 59 }
 ];
 
+
 const users: User[] = [
   { nom: 'boulingui', prenom: 'josue', email: 'elieboulingui2@gmail.com' },
   { nom: 'dupont', prenom: 'jean', email: 'jean.dupont@example.com' },
@@ -117,11 +118,7 @@ const users: User[] = [
 const video:Video[]=[
   {video:"/video/event.mp4"}
 ]
-const products: Product[] = [
-  { id: 1, nom: 'Produit A', prix: 29.99 },
-  { id: 2, nom: 'Produit B', prix: 19.99 },
-  { id: 3, nom: 'Produit C', prix: 39.99 },
-];
+
 
 const invitation: Invitation[] = [
   { image: "/image/piece.avif" }
@@ -134,4 +131,4 @@ const speakers: Speaker[] = [
 ];
 
 // Export all constants
-export { users, products, speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
+export { users,  speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
