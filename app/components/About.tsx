@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from 'react'
-
-export default function About() {
+import { invitation} from './data';
+ const About: React.FC=()=> {
   return (
     <div className="flex flex-col items-center px-4 md:px-14 container mx-auto">
       <h1 className='text-violet-900 text-center text-5xl md:text-4xl pt-28 font-bold'>
@@ -15,7 +15,17 @@ export default function About() {
       </p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-16 p-4 md:p-14 pt-16 md:pt-44'>
         <div className="flex justify-center items-center  pb-5 md:pb-52">
-          <Image src={'/image/piece.avif'} width={330} height={300} alt="" />
+        <div>
+        {invitation.map((invitation, index) => (
+          <Image 
+            key={index} 
+            src={invitation.image} 
+            width={330} 
+            height={300} 
+            alt={`Invitation ${index}`} 
+          />
+        ))}
+      </div>
         </div>
         <div className="flex flex-col space-y-9 ">
           <p className="font-thin one w-96">
@@ -60,3 +70,4 @@ export default function About() {
     </div>
   )
 }
+export default About;

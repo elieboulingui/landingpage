@@ -1,8 +1,7 @@
 import React from 'react';
-
-
+import  {day} from "./data"
 const Hero = () => {
-
+  const [item] = day;
   return (
     <div className='h-full w-full pt-8 container mx-auto'>
       <div className='pl-28 pt-14'>
@@ -16,19 +15,19 @@ const Hero = () => {
       <div className="flex pl-28 pt-4">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="px-6 py-5 bg-white rounded text-center font-bold">
-            <h1 className="text-3xl font-oswald">365</h1>
+            <h1 className="text-3xl font-oswald">{item.days}</h1>
             <p className="font-thin font-oswald text-lg">DAYS</p>
           </div>
           <div className="px-6 py-5 bg-white rounded text-center font-bold">
-            <h1 className="text-3xl font-oswald">24</h1>
+            <h1 className="text-3xl font-oswald">{item.hours}</h1>
             <p className="font-thin font-oswald text-lg">HOURS</p>
           </div>
           <div className="px-6 py-5 bg-white rounded text-center font-bold">
-            <h1 className="text-3xl font-oswald">59</h1>
+            <h1 className="text-3xl font-oswald">{item.minutes}</h1>
             <p className="font-thin font-oswald text-lg">MINUTES</p>
           </div>
           <div className="px-6 py-5 bg-white rounded text-center font-bold">
-            <h1 className="text-3xl font-oswald">59</h1>
+            <h1 className="text-3xl font-oswald">{item.seconds}</h1>
             <p className="font-thin font-oswald text-lg">SECONDS</p>
           </div>
         </div>

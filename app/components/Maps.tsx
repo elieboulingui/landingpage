@@ -1,12 +1,18 @@
 import React from 'react';
 import Formulaire from './Formulaire';
+import {maps} from './data'
+import {Urls} from "./data"
 
 export default function Maps() {
+  const map= maps[0].url
+  const lien = Urls[0].url
   return (
 <div className='flex flex-col container mx-auto'>
-  <div>
-    <img src="/image/map.jpeg" alt="Map"style={{ width: '100%', height: '506px' }}/>
-  </div>
+<div>
+      <a href={lien} target="_blank" rel="noopener noreferrer">
+        <img src={map} alt="Map" style={{ width: '100%', height: '506px', display: 'block' }} />
+      </a>
+    </div>
   <Formulaire />
  <div className='pt-96 bg-black container mx-auto'>
   <div className='bg-black p-4 '>

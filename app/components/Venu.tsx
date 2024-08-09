@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
-
+import { invitation } from './data';
+import { image } from './data';
 export default function Venu() {
   return (
     <div className='flex flex-col gap-4 p-6 md:p-24 container mx-auto'>
@@ -25,12 +26,22 @@ export default function Venu() {
           </div>
         </div>
         <div className='flex flex-col items-center justify-center bg-black p-8'>
-        <div className='bg-violet-600 p-6 rounded-full'>
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-violet-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-6.478-3.706a.5.5 0 00-.752.433v7.412a.5.5 0 00.752.433l6.478-3.706a.5.5 0 000-.866z" />
-          </svg>
-        </div>
-          <Image src={"/image/piece.avif"} width={200} height={700} alt="une image" />
+          <div className='bg-violet-600 p-6 rounded-full'>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-violet-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-6.478-3.706a.5.5 0 00-.752.433v7.412a.5.5 0 00.752.433l6.478-3.706a.5.5 0 000-.866z" />
+            </svg>
+          </div>
+          <div>
+            {invitation.map((invitation, index) => (
+              <Image
+                key={index}
+                src={invitation.image}
+                width={330}
+                height={300}
+                alt={`Invitation ${index}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

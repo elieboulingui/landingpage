@@ -1,27 +1,28 @@
 import React from 'react'
 import Image from "next/image";
-
-export default function Formulaire() {
+import {info} from "./data"
+ const Formulaire : React.FC =() => {
+    const [form] = info;
     return (
         <div className='  absolute grid-cols-1 md:absolute pt-[330px] w-full mx-auto px-4 md:px-20'>
             <div className='  md:grid grid-flow-col justify-center '>
                 <div className='hidden md:block bg-violet-500 px-20'>
                     <h1 className='text-white font-osvald font-bold text-5xl relative  pt-10  pr-10'> Get In Touch </h1>
                     <div className='pt-10 font-thin '>
-                    <div className='bg-white w-1 h-20 absolute'></div>
-                    <h1 className='text-white pl-6 '>Abx city Mary Road</h1>
-                    <h1 className='text-white pl-6 '>123 E Main St Portage</h1>
-                    <h1 className='text-white pl-6 '>MI 12345-6779</h1>
+                        <div className='bg-white w-1 h-20 absolute'></div>
+                        <h1 className='text-white pl-6 '>{form.ville}</h1>
+                        <h1 className='text-white pl-6 '>{form.quatier}</h1>
+                        <h1 className='text-white pl-6 '>{form.numeroderue}</h1>
                     </div>
                     <div className='pt-9 font-thin  '>
                         <div className='bg-white w-1 h-12 absolute '></div>
-                        <h1 className='text-white pl-6'>+241 74 56 56 55</h1>
-                        <h1 className='text-white pl-6'>+241 76 67 67 65 </h1>
+                        <h1 className='text-white pl-6'>{form.contact1}</h1>
+                        <h1 className='text-white pl-6'>{form.contact2}</h1>
                     </div>
                     <div className='pt-8 font-thin '>
-                    <div className='bg-white w-1 h-12 absolute '></div>
-                        <h1 className='text-white pl-6'>elie@gmail.com</h1>
-                        <h1 className='text-white pl-6' >www.boulingui.com</h1>
+                        <div className='bg-white w-1 h-12 absolute '></div>
+                        <h1 className='text-white pl-6'>{form.email}</h1>
+                        <h1 className='text-white pl-6' >{form.citeweb}</h1>
                     </div>
                 </div>
                 <div className='w-full bg-violet-400 p-8 pr-8   pt-12 container mx-auto'>
@@ -59,3 +60,4 @@ export default function Formulaire() {
         </div>
     )
 }
+ export default  Formulaire
