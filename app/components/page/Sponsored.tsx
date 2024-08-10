@@ -1,8 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import { image } from '../database/data';
+import { image,lienweb } from '../database/data';
+
 
 const Sponsored: React.FC = () => {
+  const getUrl = (index: number): string | undefined => {
+    const link = lienweb[index];
+    if (link) {
+      return link.lien || link.google || link.github || link.youtube;
+    }
+    return undefined;
+  };
   return (
     <div className='h-full custom-bg pt-16 flex flex-col justify-between bg-violet-500 container mx-auto px-4'>
       <div className="flex-grow flex items-center justify-center text-center pt-4">
@@ -28,6 +36,7 @@ const Sponsored: React.FC = () => {
               }`}
             >
               <div className="flex items-center justify-center">
+                <a href={getUrl(index)} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={img.src}
                   width={150}
@@ -35,6 +44,7 @@ const Sponsored: React.FC = () => {
                   className='object-contain'
                   alt={img.alt}
                 />
+                </a>
               </div>
             </div>
           ))}

@@ -51,7 +51,12 @@ export interface Speaker {
 export interface uRls {
   url: string;
 }
-
+export interface Lien{
+lien?: string;
+google?:string;
+github?:string;
+youtube?:string;
+}
 export interface Invitation {
   image: string;
 }
@@ -65,7 +70,12 @@ export interface Day {
   seconds?: number;
 }
 
-// Data Arrays
+ const lienweb: Lien[]=[
+{lien:'https://www.wikipedia.org/'},
+{github:"https://github.com/"},
+{youtube:"https://www.youtube.com/"},
+{google:"https://www.google.com/"}
+ ]
 const planing: Descriptiondate[] = [
   { moi: "mai" },
   { jours: "22" },
@@ -73,16 +83,16 @@ const planing: Descriptiondate[] = [
   { heure: "12h34" },
   { detaille: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" }
 ];
+const info: Info[] = [ {
+  ville: 'libreville',
+  quatier: 'akanda',
+  numeroderue: '235666st',
+  email: 'elieboulingui@gmail.com',
+  contact1: '+24107777777',
+  contact2: '+24107775577',
+  citeweb: 'www.html.com',
+} ]
 
-const info: Info[] = [
-  { ville: 'libreville' },
-  { quatier: 'akanda' },
-  { numeroderue: '235666st' },
-  { email: 'elieboulingui@gmail.com' },
-  { contact1: '+24107777777' },
-  { contact2: '+24107775577' },
-  { citeweb: 'www.html.com' },
-];
 
 const Urls: uRls[] = [
   { url: "https://www.google.com/maps" }
@@ -130,5 +140,5 @@ const speakers: Speaker[] = [
   { nom: "Gabin Steeven ", role: 'eleve', image: "/image/ecole.jpg" }
 ];
 
-// Export all constants
-export { users,  speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
+
+export { users, lienweb, speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };

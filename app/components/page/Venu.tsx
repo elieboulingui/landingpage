@@ -4,12 +4,11 @@ import { invitation } from '../database/data';
 import { video } from '../database/data';
 
 export default function Venu() {
-  // Extract the first video URL (or handle multiple videos as needed)
   const videoUrl = video[0]?.video;
 
   return (
     <div className='flex flex-col gap-4 p-6 md:p-24 container mx-auto'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 '>
         <div className='bg-violet-500 px-6 py-8 md:px-10 md:py-12'>
           <h1 className='text-white font-oswald font-bold text-3xl md:text-4xl mb-4'>
             Venue Of Meeting
@@ -35,13 +34,12 @@ export default function Venu() {
         </div>
         <div className='flex flex-col items-center justify-center bg-black p-6 md:p-8'>
           <div className='relative w-full max-w-md h-64 mb-8'>
-            {/* Ensure `videoUrl` is a valid string */}
             {videoUrl ? (
-              <video 
-                src={videoUrl} 
-                autoPlay 
-                loop 
-                muted 
+              <video
+                src={videoUrl}
+                autoPlay
+                loop
+                muted
                 className='object-cover w-full h-full'
               />
             ) : (
