@@ -3,7 +3,7 @@ import  {day} from "../database/data"
 const Hero = () => {
   const [item] = day;
   return (
-    <div className='h-full w-full  p-16  container mx-auto'>
+    <div className='h-full w-full  p-6  container mx-auto'>
       <div className=''>
         <h1 className='text-6xl  font-bold text-white font-oswald'>
           Meetup <br /> Conference
