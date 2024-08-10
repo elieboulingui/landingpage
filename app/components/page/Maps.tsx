@@ -17,12 +17,12 @@ export default function Maps() {
       <div className='pt-96 bg-black container mx-auto'>
         <div className='bg-black p-4'>
           <ul className='flex flex-wrap justify-center gap-6 text-white font-bold'>
-            <li className='flex-shrink-0'>Careers</li>
-            <li className='flex-shrink-0'>About</li>
-            <li className='flex-shrink-0'>Privacy</li>
-            <li className='flex-shrink-0'>Policies</li>
-            <li className='flex-shrink-0'>Mobile App</li>
-            <li className='flex-shrink-0'>Press</li>
+            <li className='flex-shrink-0'><a href="">Careers</a></li>
+            <li className='flex-shrink-0'><a href="">About</a></li>
+            <li className='flex-shrink-0'><a href="">Privacy</a></li>
+            <li className='flex-shrink-0'><a href="">Policies</a></li>
+            <li className='flex-shrink-0'><a href="">Mobile App</a></li>
+            <li className='flex-shrink-0'><a href="">Press</a></li>
           </ul>
         </div>
       </div>
