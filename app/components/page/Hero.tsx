@@ -1,9 +1,11 @@
-import React from 'react';
-import  {day} from "../database/data"
-const Hero = () => {
+'use client'
+import React, { useState } from 'react';
+import  {day,knowmore} from "../database/data"
+const Hero :React.FC = () => {
+  const [deroule , seTderoule ]=useState<boolean>(false)
   const [item] = day;
   return (
-    <div className='h-full w-full  p-6  container mx-auto'>
+    <div className='h-full w-full   p-6  container mx-auto'>
       <div className=''>
         <h1 className='text-6xl  font-bold text-white font-oswald'>
           Meetup <br /> Conference
@@ -33,12 +35,26 @@ const Hero = () => {
         </div>
       </div>
       <div className=" py-4 flex">
-        <button className="bg-purple-800 text-xl px-6 py-4 font-oswald text-white flex items-center">
+        <button onClick={()=> seTderoule(!deroule)} className="bg-purple-800 hover:bg-red-800 text-xl px-6 py-4 font-oswald text-white flex items-center">
           <div className='bg-white h-6 w-1 mr-4'></div>
           Know More
           <div className='bg-white h-6 w-1 ml-4'></div>
         </button>
+    
       </div>
+      <div>
+      {deroule && (
+        <ul className='text-white font-osvald flex justify-between font-bold'>
+          {knowmore.map((item, index) => (
+            <li key={index}>
+              {<div>{item.info1}</div>}
+              {<div>{item.info2}</div>}
+              {<div>{item.info3}</div>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
     </div>
   );
 }

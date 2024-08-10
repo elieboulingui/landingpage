@@ -15,25 +15,26 @@ const Intervenant: React.FC = () => {
           Itaque sunt facere distinctio praesentium ea, ipsum corporis doloribus laboriosam? Tenetur et alias cum.
         </p>
       </div>
-      <div className='grid grid-cols-1 pt-8 gap-6 md:grid-cols-3'>
-        {speakers.map((speaker, index) => (
-          <div key={index} className='flex flex-col items-center'>
-            <div className='w-full flex justify-center'>
-              <Image
-                className='h-96 w-auto max-w-full'
-                src={speaker.image}
-                width={384}
-                height={200}
-                alt={speaker.nom}
-              />
-            </div>
-            <footer className='bg-white w-full max-w-xs h-24 mt-4 text-center'>
-              <h1 className='text-violet-400 font-oswald font-bold text-2xl pt-4'>{speaker.nom}</h1>
-              <p className='pt-2 font-thin'>{speaker.role}</p>
-            </footer>
-          </div>
-        ))}
+      <div className='grid grid-cols-1 pt-8 md:grid-cols-3 '>
+  {speakers.map((speaker, index) => (
+    <div key={index} className='flex flex-col items-center'>
+      <div className='flex-grow w-full flex justify-center'>
+        <Image
+          className='h-96  w-96  max-w-full'
+          src={speaker.image}
+          width={384}
+          height={200}
+          alt={speaker.nom}
+        />
       </div>
+      <footer className='bg-white w-full max-w-sm text-center py-4'>
+        <h1 className='text-violet-400 font-oswald font-bold text-2xl'>{speaker.nom}</h1>
+        <p className='pt-2 font-thin'>{speaker.role}</p>
+      </footer>
+    </div>
+  ))}
+</div>
+
       <div className='relative flex justify-center pb-16'>
         <button className='bg-purple-800 text-xl px-6 py-4 font-oswald text-white flex items-center mt-32'>
           <div className='bg-white h-6 w-1 mr-4'></div>

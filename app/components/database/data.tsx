@@ -4,7 +4,11 @@ export interface User {
   prenom: string;
   email: string;
 }
-
+export interface Knowmore{
+info1?:string;
+info2?:string;
+info3?:string;
+}
 export interface Image {
   src: string;
   alt: string;
@@ -69,7 +73,11 @@ export interface Day {
   minutes?: number;
   seconds?: number;
 }
-
+const knowmore : Knowmore[]= [
+  {info1:"josue"},
+  {info2:"boulingui"},
+  {info3:"boulingui3"},
+]
  const lienweb: Lien[]=[
 {lien:'https://www.wikipedia.org/'},
 {github:"https://github.com/"},
@@ -141,4 +149,4 @@ const speakers: Speaker[] = [
 ];
 
 
-export { users, lienweb, speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
+export { users,knowmore, lienweb, speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
