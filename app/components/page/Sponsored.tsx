@@ -16,7 +16,7 @@ const Sponsored: React.FC = () => {
       <div className="flex-grow flex items-center justify-center text-center pt-4">
         <div>
           <h1 className="text-white font-oswald font-bold text-3xl md:text-4xl mb-4">
-            Sponsored of Meetup<br /> Conference
+          Sponsor de la <br /> conférence
           </h1>
           <p className="text-center text-white pt-6 font-thin text-base md:text-lg pb-12">
             le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />

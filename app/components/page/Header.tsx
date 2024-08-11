@@ -23,9 +23,9 @@ const Header = () => {
           </svg>
         </button>
         <ul className={`flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center absolute md:relative top-full md:top-0 right-0 md:right-auto mt-2 md:mt-0 ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
-          <li className="text-white text-xl oswald"> <a href="">About</a></li>
-          <li className="text-white text-xl oswald"><a href="">Speaker</a></li>
-          <li className="text-white text-xl oswald"><a href="">Schedule</a></li>
+          <li className="text-white text-xl oswald"> <a href="">À propos</a></li>
+          <li className="text-white text-xl oswald"><a href="">Conférencier</a></li>
+          <li className="text-white text-xl oswald"><a href="">Calendrier</a></li>
           <li>
             <button
               onClick={toggleMenu}

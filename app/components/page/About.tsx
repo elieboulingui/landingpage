@@ -5,9 +5,9 @@ import { invitation} from '../database/data';
   return (
     <div className="flex flex-col items-center px-4 md:px-14 container mx-auto">
       <h1 className='text-violet-900 text-center text-5xl md:text-4xl pt-28 font-bold'>
-        You Are Invited To Our
+      Vous êtes invité(e) à notre
       </h1>
-      <h1 className="text-violet-900 text-center text-5xl md:text-4xl  font-bold"> Meetup Conference</h1>
+      <h1 className="text-violet-900 text-center text-5xl md:text-4xl  font-bold"> Conférence </h1>
       <p className='text-center  font-thin md:text-lg'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius, laborum voluptatum aperiam soluta iste error at. Corporis, nemo possimus
         <br />
@@ -62,7 +62,7 @@ import { invitation} from '../database/data';
           <div className="   px-8 py-12 flex">
             <button className="bg-purple-800 text-xl px-6 py-4 font-oswald text-white flex items-center">
               <div className='bg-white h-6 w-1 mr-4'></div>
-              Know More
+              En savoir plus
               <div className='bg-white h-6 w-1 ml-4'></div>
             </button>
           </div>

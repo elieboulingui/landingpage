@@ -10,7 +10,7 @@ const Formulaire: React.FC = () => {
         <div className='absolute grid-cols-1 md:absolute pt-[330px] container w-full mx-auto px-4 md:px-20'>
             <div className='md:grid grid-flow-col justify-center'>
                 <div className='hidden md:block bg-violet-500 px-20'>
-                    <h1 className='text-white font-osvald font-bold text-5xl pt-10 pr-10'>Get In Touch</h1>
+                    <h1 className='text-white font-osvald font-bold text-5xl pt-10 pr-10'>Contactez-nous</h1>
                     <div className='pt-10 font-thin'>
                         <div className='bg-white w-1 h-20 absolute'></div>
                         <h1 className='text-white pl-6'>{defaultForm.ville}</h1>
@@ -31,7 +31,7 @@ const Formulaire: React.FC = () => {
                 <div className='w-full bg-violet-400 p-8 pt-12 container mx-auto'>
                     <h1 className="pb-6 pr-10 font-oswald text-white flex items-center">
                         <div className='bg-white h-6 w-1 mr-2'></div>
-                        Register Form
+                        Formulaire d'inscription
                         <div className='bg-white h-6 w-1 ml-2'></div>
                     </h1>
                     <div className='flex flex-col max-w-xl mx-auto'>
@@ -53,7 +53,7 @@ const Formulaire: React.FC = () => {
                         <Image src="/image/master.png" width={50} height={50} alt="MasterCard" />
                         <button className="bg-white text-xl px-2 py-2 font-oswald text-violet-400 flex items-center">
                             <div className='bg-violet-400 h-6 w-1 mr-4'></div>
-                            Submit
+                            Soumettre
                             <div className='bg-violet-400 h-6 w-1 ml-4'></div>
                         </button>
                     </div>

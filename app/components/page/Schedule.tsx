@@ -13,7 +13,7 @@ const Schedule: React.FC = () => {
             <div className="h-full container mx-auto bg-violet-600 flex flex-col justify-between p-4">
                 <div className="flex-grow flex items-center justify-center text-center pt-4">
                     <div>
-                        <h1 className="text-white text-2xl mb-4">Schedule of Meeting</h1>
+                        <h1 className="text-white text-2xl mb-4">Calendrier de la réunion</h1>
                         <h2 className="text-white text-2xl">Conference</h2>
                         <p className="text-white py-5 text-sm">
                             No schedule data available.
@@ -31,8 +31,8 @@ const Schedule: React.FC = () => {
         <div className="h-full container mx-auto bg-violet-600 flex flex-col justify-between p-4">
             <div className="flex-grow flex items-center justify-center text-center pt-4">
                 <div>
-                    <h1 className="text-white text-2xl mb-4">Schedule of Meeting</h1>
-                    <h2 className="text-white text-2xl">Conference</h2>
+                    <h1 className="text-white text-2xl mb-4">Calendrier de la réunion</h1>
+                    <h2 className="text-white text-2xl">réunion</h2>
                     <p className="text-white py-5 text-sm">
                         Le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
                         ne constituant pas l'intrigue principale d'une œuvre. <br />

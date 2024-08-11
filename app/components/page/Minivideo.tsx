@@ -20,10 +20,10 @@ export default function Minivideo() {
       {/* Content Over Video */}
       <div className='relative z-10 flex flex-col items-center justify-center h-screen text-center text-white'>
         <h1 className='text-5xl font-bold pt-28'>
-          Check Out Our Intro Video 
+        Découvrez notre vidéo de présentation
         </h1>
         <h1 className='text-5xl md:text-4xl pt-6 font-bold'>
-          Meetup Conferences
+        Conférences de rencontre
         </h1>
         <p className='pt-9 font-thin md:text-lg'>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius, laborum voluptatum aperiam

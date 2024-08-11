@@ -11,10 +11,10 @@ export default function Venu() {
       <div className='grid grid-cols-1 md:grid-cols-2 '>
         <div className='bg-violet-500 px-6 py-8 md:px-10 md:py-12'>
           <h1 className='text-white font-oswald font-bold text-3xl md:text-4xl mb-4'>
-            Venue Of Meeting
+          Lieu de la réunion
           </h1>
           <h1 className='text-white font-oswald font-bold text-3xl md:text-4xl mb-6'>
-            Conference
+          Conférence
           </h1>
           <p className='font-thin text-white mb-4 md:mb-6 w-full md:w-80 pl-4 md:pl-5'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio.
@@ -51,10 +51,10 @@ export default function Venu() {
               <div key={index} className='w-full max-w-[330px]'>
                 <Image
                   src={item.image}
-                  width={330}
-                  height={300}
+                  width={3}
+                  height={3}
                   alt={`Invitation ${index}`}
-                  className='w-full h-64 object-cover'
+                  className='w-full h-64 aspect-video'
                 />
               </div>
             ))}
