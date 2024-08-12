@@ -18,11 +18,11 @@ import { invitation} from '../database/data';
         <div>
         {invitation.map((invitation, index) => (
           <Image 
-          className="h-96 " 
+          className="h-96 aspect-video  py-4" 
             key={index} 
             src={invitation.image} 
             width={330} 
-            height={300} 
+            height={30} 
             alt={`Invitation ${index}`} 
           />
         ))}

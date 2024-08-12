@@ -14,8 +14,8 @@ export default function Home() {
     <main style={{
       margin: 0,
       padding: 0,
-      overflowX: 'hidden', /* Évite le scroll horizontal */
-      width: '100vw', /* Assure que le conteneur occupe toute la largeur de l'écran */
+      overflowX: 'hidden', 
+      width: '100vw', 
     }}>
       <div
         style={{
@@ -23,8 +23,8 @@ export default function Home() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          width: '100%', /* Assure que l'image de fond couvre toute la largeur */
-          overflowX: 'hidden', /* Évite le scroll horizontal */
+          width: '100%', 
+          overflowX: 'hidden',
         }}
       > 
         <Header/>
