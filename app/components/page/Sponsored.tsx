@@ -12,7 +12,7 @@ const Sponsored: React.FC = () => {
     return undefined;
   };
   return (
-    <div className='h-full custom-bg pt-16 flex flex-col justify-between bg-violet-500 container mx-auto px-4'>
+    <div className='h-full custom-bg pt-16 flex flex-col justify-between bg-violet-500  px-4'>
       <div className="flex-grow flex items-center justify-center text-center pt-4">
         <div>
           <h1 className="text-white font-oswald font-bold text-3xl md:text-4xl mb-4">
@@ -41,7 +41,7 @@ const Sponsored: React.FC = () => {
                   src={img.src}
                   width={150}
                   height={150}
-                  className='object-contain'
+                  className='object-contain relative m-7'
                   alt={img.alt}
                 />
                 </a>

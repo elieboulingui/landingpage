@@ -5,7 +5,7 @@ import { speakers } from '../database/data';
 
 const Intervenant: React.FC = () => {
   return (
-    <div className='bg-gray-100 container mx-auto px-4'>
+    <div className='bg-gray-100  px-4'>
       <div className='pt-36'>
         <h1 className='text-center font-oswald font-bold text-5xl text-violet-900'>Intervenant de la </h1>
         <h1 className='text-center font-oswald font-bold pt-8 text-5xl text-violet-900'>réunion</h1>

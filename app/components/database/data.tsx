@@ -84,12 +84,20 @@ const knowmore : Knowmore[]= [
 {youtube:"https://www.youtube.com/"},
 {google:"https://www.google.com/"}
  ]
-const planing: Descriptiondate[] = [
-  { moi: "mai" },
-  { jours: "22" },
-  { but: "fastfood" },
-  { heure: "12h34" },
-  { detaille: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" }
+ const planing1: Descriptiondate[] = [
+  { moi: "Mai", jours: "22", but: "fastfood", heure: "08:30 AM", detaille: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },
+];
+const planing3: Descriptiondate[] = [
+  { moi: "Mai", jours: "15", but: "Gathering welcome speech", heure: "06:30 AM", detaille: "Dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },
+];
+const planing4: Descriptiondate[] = [
+  { moi: "Mai", jours: "15", but: "Lunch", heure: "01:30 PM", detaille: "Dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },
+];
+const planing5: Descriptiondate[] = [
+  { moi: "Mai", jours: "15", but: "Network + Questions", heure: "03:00 PM", detaille: "Dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },
+];
+const planing2: Descriptiondate[] = [
+  { moi: "Mai", jours: "15", but: "Closing Thoughts", heure: "05:00 PM", detaille: "Dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },
 ];
 const info: Info[] = [ {
   ville: 'libreville',
@@ -149,4 +157,4 @@ const speakers: Speaker[] = [
 ];
 
 
-export { users,knowmore, lienweb, speakers, invitation, video, day, planing, backgroundImage, image, maps, Urls, info };
+export { users,knowmore, lienweb, speakers, invitation, video, day, planing1, planing2, planing3,planing4,planing5, backgroundImage, image, maps, Urls, info };

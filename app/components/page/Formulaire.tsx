@@ -47,10 +47,10 @@ const Formulaire: React.FC = () => {
                         <label htmlFor='ticket' className='text-white'>Ticket</label>
                         <input id='ticket' type='text' className='border border-gray-300 p-2 focus:outline-none focus:border-blue-500 mb-4 rounded-none' />
                     </div>
-                    <div className="flex justify-center">
-                        <Image src="/image/pay.png" width={50} height={50} alt="Pay" />
-                        <Image src="/image/visa.png" width={50} height={50} alt="Visa" />
-                        <Image src="/image/master.png" width={50} height={50} alt="MasterCard" />
+                    <div className="flex justify-between ">
+                        <Image src="/image/pay.png" className='p-3' width={40} height={50} alt="Pay" />
+                        <Image src="/image/visa.png" width={40} className='p-3' height={50} alt="Visa" />
+                        <Image src="/image/master.png" width={40} height={50} className='p-3' alt="MasterCard" />
                         <button className="bg-white text-xl px-2 py-2 font-oswald text-violet-400 flex items-center">
                             <div className='bg-violet-400 h-6 w-1 mr-4'></div>
                             Soumettre

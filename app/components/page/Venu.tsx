@@ -7,7 +7,7 @@ export default function Venu() {
   const videoUrl = video[0]?.video;
 
   return (
-    <div className='flex flex-col gap-4 p-6 md:p-24 container mx-auto'>
+    <div className='flex flex-col gap-4 p-6 md:p-24 '>
       <div className='grid grid-cols-1 md:grid-cols-2 '>
         <div className='bg-violet-500 px-6 py-8 md:px-10 md:py-12'>
           <h1 className='text-white font-oswald font-bold text-3xl md:text-4xl mb-4'>

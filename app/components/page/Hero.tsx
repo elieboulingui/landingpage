@@ -5,7 +5,7 @@ const Hero :React.FC = () => {
   const [deroule , seTderoule ]=useState<boolean>(false)
   const [item] = day;
   return (
-    <div className='h-full w-full   p-6  container mx-auto'>
+    <div className='h-full w-full   p-6  '>
       <div className=''>
         <h1 className='text-6xl  font-bold text-white font-oswald'>
         Rencontre <br /> Conférence
