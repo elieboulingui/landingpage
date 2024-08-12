@@ -48,7 +48,7 @@ function Schedule() {
                     <p className="text-center text-white md:hidden">{item.moi}</p>
                 </div>
                 {/* Ligne de séparation */}
-                <div className='absolute top-0 left-28 h-20 mt-20 border-l border-white transform -translate-x-1/2 hidden md:block'></div>
+                <div className='absolute top-0 left-44 h-16 mt-16 border-l border-white transform -translate-x-1/2 hidden md:block'></div>
                 {/* Colonne droite : affichée sur tous les écrans */}
                 <div className="w-full md:w-1/2 flex flex-col items-start">
                     <p className="text-center font-bold text-xl text-white">{item.but}</p>
