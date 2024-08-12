@@ -24,6 +24,7 @@ export default function Maps() {
             <li className='flex-shrink-0'><a href="">Application mobile</a></li>
             <li className='flex-shrink-0'><a href="">Presse</a></li>
           </ul>
+          <p className='text-white text-center py-3 md:text-center'>2022 Eivent All Rights Reserved</p>
         </div>
       </div>
     </div>
