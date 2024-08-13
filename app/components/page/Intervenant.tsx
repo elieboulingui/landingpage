@@ -1,4 +1,4 @@
-// Intervenant.tsx
+
 import React from 'react';
 import Image from 'next/image';
 import { speakers, speakerinfo } from '../database/data';

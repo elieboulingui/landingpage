@@ -10,7 +10,7 @@ const About: React.FC = () => {
         {text.textinvite}
       </h1>
       <h1 className="text-violet-900 text-center text-5xl md:text-4xl pt-2  font-bold"> {text.textinvite2} </h1>
-      <p className='text-center  w-1/2  pt-4 font-thin md:text-lg'>
+      <p className='text-center  md:w-1/2  pt-4 font-thin md:text-lg'>
       {text.textlorem1}
       </p>
       <div className='grid grid-cols-1 md:grid-cols-2 p-4'>
