@@ -49,7 +49,7 @@ function Schedule() {
                     
                   
                    {Array.from({ length: items.length - 1 }, (_, index) => (
-    <div key={index} className="absolute h-5 mt-20 w-2 bg-white md:block hidden"></div>
+    <div key={index} className="absolute h-5 mt-20 w-1 bg-white md:block hidden"></div>
 ))}
 
                 </div>
