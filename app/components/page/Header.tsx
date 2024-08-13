@@ -22,7 +22,7 @@ const Header = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <ul className={`flex flex-col md:flex-row space-y-4 bg-yellow-200 md:bg-none md:space-y-0 md:space-x-8 items-center absolute md:relative top-full md:top-0 right-0 md:right-auto mt-2 md:mt-0 ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
+        <ul className={`flex flex-col md:flex-row space-y-4 bg-yellow-200 md:bg-transparent md:space-y-0 md:space-x-8 items-center absolute md:relative top-full md:top-0 right-0 md:right-auto mt-2 md:mt-0 ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
           <li className="text-white text-xl oswald"> <a href="">À propos</a></li>
           <li className="text-white text-xl oswald"><a href="">Conférencier</a></li>
           <li className="text-white text-xl oswald"><a href="">Calendrier</a></li>
