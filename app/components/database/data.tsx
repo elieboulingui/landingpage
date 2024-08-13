@@ -48,6 +48,9 @@ export interface Maps {
 
 export interface Info {
   text:string;
+  a1:string;
+  a2:string;
+  a3:string;
   text1:string;
   text2:string;
   text3:string;
@@ -212,7 +215,7 @@ const info: Info[] = [ {
   contact2: '+24107775577',
   citeweb: 'www.html.com',
   text1: "Formulaire d'inscription",
-  text:'Contactez-nous',
+  text: 'Contactez-nous',
   text2: "Titre",
   text3: "Nom",
   text4: "Email",
@@ -220,7 +223,10 @@ const info: Info[] = [ {
   image1: "/image/pay.png",
   image2: "/image/visa.png",
   image3: "/image/master.png",
-  textsoumettre: "Soumettre"
+  textsoumettre: "Soumettre",
+  a1: "https://www.youtube.com/watch?v=x91h9r0HXIQ",
+  a2: "https://www.youtube.com/watch?v=x91h9r0HXIQ",
+  a3: "https://www.youtube.com/watch?v=x91h9r0HXIQ"
 } ]
 
 

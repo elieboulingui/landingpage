@@ -15,10 +15,10 @@ const About: React.FC = () => {
       </p>
       <div className='grid grid-cols-1 md:grid-cols-2 p-4'>
         <div className="flex justify-center items-center md:pb-20">
-          <div>
+          <div className=" ">
             {invitation.map((invitation, index) => (
               <Image
-                className=""
+                className=" pb-20"
                 key={index}
                 src={invitation.image}
                 width={299}

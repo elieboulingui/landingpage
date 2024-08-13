@@ -7,9 +7,9 @@ const Formulaire: React.FC = () => {
     const defaultForm = form || {};
 
     return (
-        <div className='absolute grid-cols-1 md:absolute pt-[200px] md:pt-[240px] container w-full mx-auto px-4 md:px-20'>
+        <div className=' absolute grid-cols-1  md:absolute pt-[200px] md:pt-[240px] container w-full mx-auto px-4 md:px-20'>
             <div className='md:grid grid-flow-col justify-center'>
-                <div className='hidden md:block bg-violet-500 px-20'>
+                <div className='hidden lg:block xl:block bg-violet-500 px-20'>
                     <h1 className='text-white font-osvald font-bold text-5xl pt-10 pr-10'>{form.text}</h1>
                     <div className='pt-10 font-thin'>
                         <div className='bg-white w-1 h-20 absolute'></div>
@@ -48,13 +48,13 @@ const Formulaire: React.FC = () => {
                         <input id='ticket' type='text' className='border border-gray-300  p-2 focus:outline-none focus:border-blue-500 mb-4 rounded-none' />
                     </div>
                     <div className="flex flex-wrap  justify-center md:justify-between w-full items-center p-3">
-                        <a href="">
+                        <a href={form.a1}>
                             <Image src={form.image1} className='p-3' width={76} height={50} alt="Pay" />
                         </a>
-                        <a href="">
+                        <a href={form.a2}>
                             <Image src={form.image2} className='p-3' width={76} height={50} alt="Visa" />
                         </a>
-                        <a href="">
+                        <a href={form.a3}>
                             <Image src={form.image3} className='p-3' width={76} height={50} alt="MasterCard" />
                         </a>
                         <button className="bg-white flex  px-10 text-xl md:px-2 py-2 font-oswald hover:bg-violet-200 text-violet-400 md:flex items-center">

@@ -57,7 +57,7 @@ export default function Venu() {
                   width={3}
                   height={3}
                   alt={`Invitation ${index}`}
-                  className='w-full h-64 aspect-square'
+                  className='w-full h-64 aspect-auto'
                 />
               </div>
             ))}
