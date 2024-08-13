@@ -10,7 +10,7 @@ const Intervenant: React.FC = () => {
       <div className=' pt-10 md:pt-36'>
         <h1 className='text-center font-oswald font-bold text-5xl text-violet-900'>{info.speakertext1} </h1>
         <h1 className='text-center font-oswald font-bold md:pt-8 text-5xl text-violet-900'>{info.speakertext2}</h1>
-        <div className='w-1/2 mx-auto'>
+        <div className='md:w-1/2 mx-auto'>
           <p className='text-center font-thin pt-6'>
             {info.speakertext}
           </p>

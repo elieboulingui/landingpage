@@ -44,17 +44,21 @@ const Hero :React.FC = () => {
     
       </div>
       <div>
-      {deroule && (
-        <ul className='text-white font-osvald flex justify-between font-bold'>
-          {knowmore.map((item, index) => (
-            <li key={index}>
-              {<div>{item.info1}</div>}
-              {<div>{item.info2}</div>}
-              {<div>{item.info3}</div>}
-            </li>
-          ))}
-        </ul>
-      )}
+     {/* 
+  {deroule && (
+    <ul className='text-white font-osvald flex justify-between font-bold'>
+      {knowmore.map((item, index) => (
+        <li key={index}>
+          {<div>{item.info1}</div>}
+          {<div>{item.info2}</div>}
+          {<div>{item.info3}</div>}
+        </li>
+      ))}
+    </ul>
+  )}
+*/}
+
+
     </div>
     </div>
   );

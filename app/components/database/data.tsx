@@ -102,6 +102,7 @@ export interface Speaker {
   image: string;
 }
 export interface Header{
+  link:string;
   a1?:string;
   image?:string;
   a2?:string;
@@ -189,7 +190,10 @@ const knowmore : Knowmore[]= [
 {google:"https://www.google.com/"}
  ]
  const header: Header[]=[
-{a1:"À propos",a2:"Conférencier",a3:"Calendrier",btn:"Buy Tickets",image:"/image/README.png"},
+{
+  a1: "À propos", a2: "Conférencier", a3: "Calendrier", btn: "Buy Tickets", image: "/image/README.png",
+  link: "https://www.youtube.com/watch?v=x91h9r0HXIQ"
+},
  ]
  const planing1: Descriptiondate[] = [
   { moi: "Mai", jours: "22", but: "fastfood", heure: "08:30 AM", detaille: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },

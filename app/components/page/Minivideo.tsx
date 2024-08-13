@@ -26,7 +26,7 @@ export default function Minivideo() {
         <h1 className='text-5xl md:text-4xl pt-6 font-bold'>
          {videos.videodescription2}
         </h1>
-      <div className='w-1/2'>
+      <div className='md:w-1/2'>
       <p className='pt-9  font-thin md:text-lg'>
          {videos.videolorem}
         </p>
