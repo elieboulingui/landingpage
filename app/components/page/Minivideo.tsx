@@ -2,6 +2,7 @@ import React from 'react';
 import { video } from '../database/data';
 
 export default function Minivideo() {
+  const [videos]= video;
   const videoUrl = video[0]?.video;
 
   return (
@@ -20,16 +21,16 @@ export default function Minivideo() {
 
       <div className='relative z-10 flex flex-col items-center justify-center h-screen text-center text-white'>
         <h1 className='text-5xl font-bold pt-28'>
-          Découvrez notre vidéo de présentation
+ {videos.videodescription}
         </h1>
         <h1 className='text-5xl md:text-4xl pt-6 font-bold'>
-          Conférences de rencontre
+         {videos.videodescription2}
         </h1>
-        <p className='pt-9 font-thin md:text-lg'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius, laborum voluptatum aperiam
-          <br />
-          id, voluptatem eveniet, amet inventore fugit repudiandae cupiditate doloremque itaque.
+      <div className='w-1/2'>
+      <p className='pt-9  font-thin md:text-lg'>
+         {videos.videolorem}
         </p>
+      </div>
       </div>
     </div>
   );

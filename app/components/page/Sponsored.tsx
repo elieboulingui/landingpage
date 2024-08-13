@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import { image,lienweb } from '../database/data';
+import { image,lienweb,textsponsore } from '../database/data';
 
 
 const Sponsored: React.FC = () => {
+  const [item]=textsponsore;
   const getUrl = (index: number): string | undefined => {
     const link = lienweb[index];
     if (link) {
@@ -16,12 +17,16 @@ const Sponsored: React.FC = () => {
       <div className="flex-grow flex items-center justify-center text-center pt-4">
         <div>
           <h1 className="text-white font-oswald font-bold text-3xl md:text-4xl mb-4">
-          Sponsor de la <br /> conférence
+          {item.text1}
           </h1>
-          <p className="text-center text-white pt-6 font-thin text-base md:text-lg pb-12">
-            le lore, emprunt à l'anglais signifiant « folklore », « tradition orale », « diégèse », est l'histoire d'un univers de fiction <br />
-            ne constituant pas l'intrigue principale d'une œuvre.
+          <h1 className="text-white font-oswald font-bold text-3xl md:text-4xl mb-4">
+         {item.text2}
+          </h1>
+         <div className='w-3/5 mx-auto '>
+         <p className="text-center text-white pt-6 font-thin text-base md:text-lg pb-12">
+          {item.text3}
           </p>
+         </div>
         </div>
       </div>
       <div className="flex-grow">
@@ -53,7 +58,7 @@ const Sponsored: React.FC = () => {
       <div className="flex justify-center pt-10 pb-20">
         <button className="text-xl bg-white px-6 py-4 font-oswald text-violet-400 flex items-center mt-12">
           <div className='bg-purple-800 h-6 w-1 mr-4'></div>
-          Call For Speaker
+        {item.text4}
           <div className='bg-purple-800 h-6 w-1 ml-4'></div>
         </button>
       </div>

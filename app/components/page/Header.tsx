@@ -1,8 +1,9 @@
 'use client'
 import Image from "next/image";
 import { useState } from 'react';
-
+import { header } from "../database/data"; 
 const Header = () => {
+const [head]=header;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,7 +12,11 @@ const Header = () => {
 
   return (
     <nav className="flex items-start justify-between container mx-auto p-7  relative">
-      <Image src={'/image/README.png'} width={120} height={10} alt="Logo" />
+     {head.image ? (
+  <Image src={head.image} width={120} height={10} alt="Logo" />
+) : (
+  <div>No image available</div>
+)}
       <div className="relative">
         <button
           onClick={toggleMenu}
@@ -23,16 +28,16 @@ const Header = () => {
           </svg>
         </button>
         <ul className={`flex flex-col md:flex-row space-y-4 bg-yellow-200 md:bg-transparent md:space-y-0 md:space-x-8 items-center absolute md:relative top-full md:top-0 right-0 md:right-auto mt-2 md:mt-0 ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
-          <li className="text-white text-xl oswald"> <a href="">À propos</a></li>
-          <li className="text-white text-xl oswald"><a href="">Conférencier</a></li>
-          <li className="text-white text-xl oswald"><a href="">Calendrier</a></li>
+          <li className="text-white text-xl oswald"> <a href="">{head.a1}</a></li>
+          <li className="text-white text-xl oswald"><a href="">{head.a2}</a></li>
+          <li className="text-white text-xl oswald"><a href="">{head.a3}</a></li>
           <li>
             <button
               onClick={toggleMenu}
               className=" md:bg-purple-800 text-xl oswald px-6 py-4 p-4 text-white flex justify-between items-center"
             >
               <div className=' md:bg-white h-6 w-1  mr-2'></div>
-                <a href=""> Buy Tickets</a>
+                <a href="">{head.btn}</a>
               <div className='md:bg-white h-6 w-1  ml-2 '></div>
             </button>
           </li>

@@ -1,9 +1,10 @@
 import React from 'react';
 import Formulaire from './Formulaire';
-import { maps } from '../database/data'
+import { maps ,footer} from '../database/data'
 import { Urls } from "../database/data"
 
 export default function Maps() {
+  const [item] = footer;
   const map = maps[0].url
   const lien = Urls[0].url
   return (
@@ -17,14 +18,14 @@ export default function Maps() {
       <div className='pt-96 bg-black '>
         <div className='bg-black p-4'>
           <ul className='flex flex-wrap justify-center gap-6 text-white font-bold'>
-            <li className='flex-shrink-0'><a href="">Carrières</a></li>
-            <li className='flex-shrink-0'><a href="">À propos</a></li>
-            <li className='flex-shrink-0'><a href="">Confidentialité</a></li>
-            <li className='flex-shrink-0'><a href="">Politiques</a></li>
-            <li className='flex-shrink-0'><a href="">Application mobile</a></li>
-            <li className='flex-shrink-0'><a href="">Presse</a></li>
+            <li className='flex-shrink-0'><a href="">{item.text1}</a></li>
+            <li className='flex-shrink-0'><a href="">{item.text2}</a></li>
+            <li className='flex-shrink-0'><a href="">{item.text3}</a></li>
+            <li className='flex-shrink-0'><a href="">{item.text4}</a></li>
+            <li className='flex-shrink-0'><a href="">{item.text5}</a></li>
+            <li className='flex-shrink-0'><a href="">{item.text6}</a></li>
           </ul>
-          <p className='text-white text-center py-5  md:text-center'>2022 | Eivent | All Rights Reserved</p>
+          <p className='text-white text-center py-5  md:text-center'>{item.text7}</p>
         </div>
       </div>
     </div>
