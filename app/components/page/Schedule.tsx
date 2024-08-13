@@ -37,33 +37,40 @@ function Schedule() {
                 </div>
             </div>
 
-            
+
             <div className="flex flex-col justify-center items-center w-full py-8">
-    <div className="w-4/5 flex flex-col space-y-4">
+    <div className="w-full md:w-4/5 flex flex-col space-y-4 relative">
         {items.map((item, index) => (
             <div key={index} className="w-full flex flex-col md:flex-row justify-between p-4 relative">
-                {/* Colonne gauche : affichée sur tous les écrans */}
-                <div className="w-full md:w-1/2 flex flex-col items-center mb-4 md:mb-0">
+                
+                <div className="w-full md:w-1/2 flex flex-col items-center mb-4 md:mb-0 relative">
                     <p className="text-center font-bold text-3xl text-white">{item.jours}</p>
-                    <p className="text-center text-white md:hidden">{item.moi}</p>
+                    <p className="text-center text-white">{item.moi}</p>
+                    
+                  
+                    {Array.from({ length: items.length - 1 }, (_, index) => (
+    <div key={index} className="absolute h-5 mt-20 w-2 bg-white md:block hidden"></div>
+))}
+
                 </div>
-                {/* Ligne de séparation */}
-                <div className='absolute top-0 left-44 h-16 mt-16 border-l border-white transform -translate-x-1/2 hidden md:block'></div>
-                {/* Colonne droite : affichée sur tous les écrans */}
-                <div className="w-full md:w-1/2 flex flex-col items-start">
-                    <p className="text-center font-bold text-xl text-white">{item.but}</p>
-                    <p className="text-center text-white md:hidden">{item.heure}</p>
+                
+                <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start relative">
+                    <div className="flex flex-col items-center md:items-start">
+                        <p className="text-center md:text-start font-bold text-xl text-white">{item.but}</p>
+                        <p className="text-center md:text-start text-white">{item.heure}</p>
+                    </div>
                 </div>
-                {/* Détails : visible uniquement sur écrans mobiles */}
+                
                 <div className="w-full flex items-start justify-center mt-4 md:mt-0">
                     <div className="w-2/3">
-                        <p className="text-left text-white ">{item.detaille}</p>
+                        <p className="text-left text-white">{item.detaille}</p>
                     </div>
                 </div>
             </div>
         ))}
     </div>
 </div>
+
 
 
         </div>

@@ -7,7 +7,7 @@ export default function Minivideo() {
   return (
     <div className='relative bg-violet-400 '>
 
-      <div className="absolute w-full h-[720px] max-w-[1440px] mx-auto">
+      <div className="absolute w-full h-full  mx-auto">
         <video
           src={videoUrl}
           autoPlay

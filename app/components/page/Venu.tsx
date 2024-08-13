@@ -16,9 +16,11 @@ export default function Venu() {
           <h1 className='text-white font-oswald font-bold text-3xl md:text-4xl mb-6'>
           Conférence
           </h1>
-          <p className='font-thin text-white mb-4 md:mb-6 w-full md:w-80 pl-4 md:pl-5'>
+          <div className='mb-6 md:mb-8'>
+          <p className='font-thin text-white pl-4 md:pl-5'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio.
           </p>
+          </div>
           <div className='mb-6 md:mb-8'>
             <h2 className='text-white font-oswald text-xl md:text-2xl mb-2 pl-4 md:pl-5'>Location</h2>
             <p className='font-thin text-white pl-4 md:pl-5'>
@@ -48,13 +50,13 @@ export default function Venu() {
           </div>
           <div className='flex flex-wrap justify-center gap-4'>
             {invitation.map((item, index) => (
-              <div key={index} className='w-full max-w-[330px]'>
+              <div key={index} className='w-full max-w-[530px]'>
                 <Image
                   src={item.image}
                   width={3}
                   height={3}
                   alt={`Invitation ${index}`}
-                  className='w-full h-64 aspect-video'
+                  className='w-full h-64 aspect-square'
                 />
               </div>
             ))}
