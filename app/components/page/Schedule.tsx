@@ -25,7 +25,7 @@ function Schedule() {
 
     return (
 
-        <div className="h-full w-full  bg-violet-600 p-4">
+        <div className="h-full w-full  bg-violet-600 px-10 py-10 ">
             <div className="flex-grow flex items-center justify-center text-center pt-4">
                 <div>
                     <h1 className="text-white text-center pt-12 font-oswald font-bold text-5xl mb-4">Calendrier de la réunion</h1>
@@ -38,7 +38,7 @@ function Schedule() {
             </div>
 
 
-            <div className="flex flex-col justify-center items-center w-full py-8">
+            <div className="flex flex-col justify-center items-center w-full md:pt-24 py-8">
     <div className="w-full md:w-4/5 flex flex-col space-y-4 relative">
         {items.map((item, index) => (
             <div key={index} className="w-full flex flex-col md:flex-row justify-between p-4 relative">
@@ -48,7 +48,7 @@ function Schedule() {
                     <p className="text-center text-white">{item.moi}</p>
                     
                   
-                    {Array.from({ length: items.length - 1 }, (_, index) => (
+                   {Array.from({ length: items.length - 1 }, (_, index) => (
     <div key={index} className="absolute h-5 mt-20 w-2 bg-white md:block hidden"></div>
 ))}
 
@@ -57,13 +57,13 @@ function Schedule() {
                 <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start relative">
                     <div className="flex flex-col items-center md:items-start">
                         <p className="text-center md:text-start font-bold text-xl text-white">{item.but}</p>
-                        <p className="text-center md:text-start text-white">{item.heure}</p>
+                        <p className="text-center md:text-start font-thin text-white">{item.heure}</p>
                     </div>
                 </div>
                 
                 <div className="w-full flex items-start justify-center mt-4 md:mt-0">
-                    <div className="w-2/3">
-                        <p className="text-left text-white">{item.detaille}</p>
+                    <div className="">
+                        <p className="text-left font-thin text-white">{item.detaille}</p>
                     </div>
                 </div>
             </div>

@@ -39,9 +39,9 @@ const Sponsored: React.FC = () => {
                 <a href={getUrl(index)} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={img.src}
-                  width={150}
+                  width={160}
                   height={150}
-                  className='object-contain relative m-7'
+                  className='object-contain p-3'
                   alt={img.alt}
                 />
                 </a>
