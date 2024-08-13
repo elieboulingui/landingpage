@@ -4,6 +4,15 @@ export interface User {
   prenom: string;
   email: string;
 }
+ export  interface Activity {
+  jour: string;
+  titre: string;
+  description: string;
+  heureDebut: string;
+  heureFin: string;
+  animation: string;
+}
+
 export interface Footer{
 text1:string;
 text2:string;
@@ -195,6 +204,7 @@ const knowmore : Knowmore[]= [
   link: "https://www.youtube.com/watch?v=x91h9r0HXIQ"
 },
  ]
+ 
  const planing1: Descriptiondate[] = [
   { moi: "Mai", jours: "22", but: "fastfood", heure: "08:30 AM", detaille: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni sapiente eius incidunt provident in! Dicta voluptatum fugiat odio nisi et optio cum voluptate eum, magni doloribus eaque neque distinctio!" },
 ];
@@ -320,6 +330,48 @@ const invitation: Invitation[] = [
     location: "location"
   }
 ];
+const activities: Activity[] = [
+  {
+    jour: 'Lundi',
+    titre: 'Yoga du matin',
+    description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti in quasi labore! Dignissimos distinctio natus veritatis molestias eligendi eos reiciendis repellat assumenda quisquam voluptate? Tenetur quas fugit deleniti obcaecati!',
+    heureDebut: '08:00',
+    heureFin: '09:00',
+    animation: "natalie"
+  },
+  {
+    jour: 'Mardi',
+    titre: 'Atelier de peinture',
+    description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti in quasi labore! Dignissimos distinctio natus veritatis molestias eligendi eos reiciendis repellat assumenda quisquam voluptate? Tenetur quas fugit deleniti obcaecati!',
+    heureDebut: '10:00',
+    heureFin: '12:00',
+    animation: "glen"
+  },
+  {
+    jour: 'Mercredi',
+    titre: 'Lecture animée',
+    description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti in quasi labore! Dignissimos distinctio natus veritatis molestias eligendi eos reiciendis repellat assumenda quisquam voluptate? Tenetur quas fugit deleniti obcaecati!',
+    heureDebut: '14:00',
+    heureFin: '15:00',
+    animation: "marcel"
+  },
+  {
+    jour: 'Jeudi',
+    titre: 'Cuisine du monde',
+    description: 'Préparation de plats exotiques  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti in quasi labore! Dignissimos distinctio natus veritatis molestias eligendi eos reiciendis repellat assumenda quisquam voluptate? Tenetur quas fugit deleniti obcaecati!',
+    heureDebut: '16:00',
+    heureFin: '18:00',
+    animation: "ferry"
+  },
+  {
+    jour: 'Vendredi',
+    titre: 'Concert en plein air',
+    description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti in quasi labore! Dignissimos distinctio natus veritatis molestias eligendi eos reiciendis repellat assumenda quisquam voluptate? Tenetur quas fugit deleniti obcaecati!',
+    heureDebut: '19:00',
+    heureFin: '21:00',
+    animation: "dj khaled"
+  }
+];
 
 const speakers: Speaker[] = [
   { nom: 'Gabin Steeven', role: 'programmer', image: '/image/gab.jpg' },
@@ -328,4 +380,4 @@ const speakers: Speaker[] = [
 ];
 
 
-export { speakerinfo, footer, textsponsore, scheduleDescription, users,knowmore, lienweb,textinvitation, speakers, invitation, video, day, planing1, planing2, planing3,header, planing4,planing5, backgroundImage, image, maps, Urls, info };
+export { speakerinfo, activities, footer, textsponsore, scheduleDescription, users,knowmore, lienweb,textinvitation, speakers, invitation, video, day, planing1, planing2, planing3,header, planing4,planing5, backgroundImage, image, maps, Urls, info };
