@@ -1,6 +1,6 @@
 // Importez les tableaux de données
-import React from 'react';
-import { Descriptiondate,activities, scheduleDescription, planing1, planing2, planing3, planing4, planing5 } from '../database/data';
+import React from 'react'; 
+import { Descriptiondate,activities, scheduleDescription, planing1, planing2, planing3, planing4, planing5} from '../database/data';
 
 const combinedPlaningData: Descriptiondate[] = [...planing1, ...planing2, ...planing3, ...planing4, ...planing5,];
 
@@ -15,7 +15,7 @@ function Schedule() {
                         <h1 className="text-center font-oswald font-bold text-5xl mb-4"> {item.h1}</h1>
                         <h2 className="text-white text-center font-oswald font-bold text-5xl"> {item.h2}</h2>
                         <p className="text-white py-5 text-sm">
-                            No schedule data available.
+                          {item.p}
                         </p>
                     </div>
                 </div>
